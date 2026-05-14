@@ -17,12 +17,22 @@
     </style>
 </head>
 <body>
-    <div id="area" onclick="clicar()">
+    <div id="area">
         <p>DIV INTERATIVA</p>
     </div>
 <script>
+    a.addEventListener('click', clicar);
+    a.addEventListener('mouseover', passar);
+    a.addEventListener('mouseout', voltar);
+    var a = document.getElementById('area');
     function clicar() {
-        alert("DIV clicada!");
+        a.innerHTML = '<p>Clicou!</p>';
+    }
+    function passar() {
+        a.innerHTML = '<p>Passou!</p>';
+    }
+    function voltar() {
+        a.innerHTML = '<p>saiu</p>';
     }
 </script>
 </body>
