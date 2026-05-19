@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hours 2</title>
+</head>
+<body>  
+    <h1>Hours 2</h1>
+    <h2>Agora são: <span id="horaAtual"></span></h2>
+    <button onclick="verificarHora()">Bom ?</button>
+    <p id="bons"> 
+    </p>
+    <script>
+        let horaAtual = document.getElementById("horaAtual");
+        let data = new Date();
+        horaAtual.innerHTML = data.getHours();
+       function verificarHora() {
+        if ( data == 0 && data < 12) {
+            document.getElementById("bons").innerHTML = "Bom dia!";
+        } else if (data >= 12 && data < 18) {
+            document.getElementById("bons").innerHTML = "Boa tarde!";
+        } else if (data >= 18 && data < 24) {
+            document.getElementById("bons").innerHTML = "Boa noite!";
+        }
+    }
+    </script>
+</body>
+</html>

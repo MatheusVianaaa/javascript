@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>dias</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+            text-align: center;
+            padding: 50px;
+        }
+        h1 {
+            color: #333;
+        }
+        p {
+            font-size: 24px;
+            color: #555;
+        }
+    </style>
+</head>
+<body>
+    <h1>dias</h1>
+    <p id="diaSem"></p>
+    <script>
+        var data = new Date();
+        var diaSem = data.getDay();
+
+        switch (diaSem) {
+            case 0:
+                document.getElementById("diaSem").innerHTML = "Domingo";
+                break;
+            case 1:
+                document.getElementById("diaSem").innerHTML = "Segunda-feira";
+                break;
+            case 2:
+                document.getElementById("diaSem").innerHTML = "Terça-feira";
+                break;
+            case 3:
+                document.getElementById("diaSem").innerHTML = "Quarta-feira";
+                break;
+            case 4:
+                document.getElementById("diaSem").innerHTML = "Quinta-feira";
+                break;
+            case 5:
+                document.getElementById("diaSem").innerHTML = "Sexta-feira";
+                break;
+            case 6:
+                document.getElementById("diaSem").innerHTML = "Sábado";
+                break;
+        }
+    </script>
+</body>
+</html>

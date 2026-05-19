@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hours</title>
+</head>
+<body>  
+    <h1>Hours</h1>
+    <input type="number" id="hourInput" placeholder="Digite a hora (0-23)">
+    <button onclick="verificarHora()">Verificar</button>
+    <p id="bons"> 
+    </p>
+    <script>
+        // Obtém o elemento onde a mensagem será exibida
+        let horas = document.getElementById("bons")
+        // Função para verificar a hora e exibir a mensagem correspondente
+        function verificarHora() {
+        if(hourInput.value >= 0 && hourInput.value < 12) {
+            horas.innerHTML = "Bom dia!";
+        } else if(hourInput.value >= 12 && hourInput.value < 18) {
+            horas.innerHTML = "Boa tarde!";
+        } else if(hourInput.value >= 18 && hourInput.value < 24) {
+            horas.innerHTML = "Boa noite!";
+        } else {
+            horas.innerHTML = "Hora inválida! Por favor, insira um valor entre 0 e 23.";
+        }}
+    </script>
+</body>
+</html>
