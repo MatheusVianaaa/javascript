@@ -1,0 +1,33 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    height: 100vh;
+    background-color: #1f1f1f;
+}
+h1#p{
+    color: #fff;
+    font-family: Arial, Helvetica, sans-serif;
+}
+header{
+    color: white;
+    text-align: center;
+    padding: 40px;
+}
+
+section{
+    background-color: white;
+    border-radius: 10px;
+    width:500px;
+    margin: auto;
+    padding: 15px;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.342);
+}
+footer{
+    padding: 40px;
+    color: white;
+    text-align: center;
+    font-style: italic;
+}

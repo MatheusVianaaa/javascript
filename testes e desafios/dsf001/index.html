@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desafio das Mensagens</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin-top: 50px;
+        }
+        #div01, #div02, #div03 {
+            display: inline-block;
+            width: 100px;
+            height: 100px;
+            margin: 20px;
+            background-color: lightgray;
+            cursor: pointer;
+            font-size: 24px;
+            font-weight: bold;
+            text-align: center;
+        }
+        .content {
+            line-height: 100px;
+        }
+    </style>
+</head>
+<body>
+        <h1>Desafio das Mensagens</h1>
+        <p>Este site é designado a caracterizar qual caixa está sendo clicada a partir de JS.</p>
+
+        <div id="div01" onclick="verificacaixa('div01')" class="content">B1</div>
+        <div id="div02" onclick="verificacaixa('div02')" class="content">B2</div>
+        <div id="div03" onclick="verificacaixa('div03')" class="content">B3</div>
+
+<script>
+    
+    function verificacaixa(id) {
+        if (id === 'div01') {
+            window.alert('Você clicou na caixa B1');
+        } else if (id === 'div02') {
+            window.alert('Você clicou na caixa B2');
+        } else if (id === 'div03') {
+            window.alert('Você clicou na caixa B3');
+        }
+    }
+</script>
+</body>
+</html>
